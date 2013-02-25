@@ -14,11 +14,10 @@
     var pictures=new Array();
     var items=[];
     var current=0;
-    var circle1;
-    var circle2;
-    var circle3;
+    var circle1, circle2,circle3;
     var content;
     var canvas;
+    var currentURL="";
 
 $(document).ready(function()
 {
@@ -74,7 +73,8 @@ function navigationHandler(e)
             break;
     }
    // $('#pagecontent').load(url);
-    hideCanvas(url);
+    currentURL=url;
+    hideCanvas();
 }
 function initHeader()
 {
@@ -161,23 +161,23 @@ function initFooter()
 
 }
 //canvas ----------------------------------------------
-function changePage(url)
+function changePage()
 {
     console.log("change page ");
     //$('#canvas').hide();
     //$('#pagecontent').show();
-    $('#pagecontent').load(url);
+    $('#pagecontent').load(currentURL);
     $('#pagecontent').hide();
     $("#pagecontent").fadeIn(1500);
    // content.alpha=0;
    // TweenLite.to(content,0.8,{alpha:1});
 
 }
-function hideCanvas(url)
+function hideCanvas()
 {
-    $("#canvas").fadeOut(1200);
+    $("#canvas").fadeOut(1200,changePage);
     //$("#pagecontent").fadeOut(500);
-    changePage(url);
+    //changePage(url);
   //TweenLite.to(canvas,0.8,{css:{autoAlpha:0}});
   // TweenLite.to(canvas,0.8,{css:{alpha:0},onComplete:changePage,onCompleteParams:[url]})
 }
