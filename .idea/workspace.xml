@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1e3ea39-660e-4988-a007-a7d6fb362087" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/footer_facebook.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/footer_gplus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/footer_twitter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib/TweenLite.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib/easeljs-0.6.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib/easing/EasePack.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib/jquery-1.6.4.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib/twitter-search-api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/Circle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/UserImg.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
     </list>
     <ignored path="android-tour-web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,70 +30,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="51" selection-start="3082" selection-end="3082" vertical-scroll-proportion="1.8342696">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/bootstrap.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="1" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="androidtour.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/template/androidtour.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="program.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/template/program.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="7" selection-start="152" selection-end="152" vertical-scroll-proportion="-3.75">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="speaker.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/template/speaker.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sponsor.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/template/sponsor.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="team.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/template/team.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/app.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="19" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0">
+            <state line="110" column="50" selection-start="4862" selection-end="4862" vertical-scroll-proportion="0.6966292">
               <folding />
             </state>
           </provider>
@@ -108,7 +39,16 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="3" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0">
+            <state line="87" column="59" selection-start="2489" selection-end="2489" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Circle.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/Circle.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -129,13 +69,13 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/assets/template/androidtour.html" />
         <option value="$PROJECT_DIR$/assets/template/programa.html" />
         <option value="$PROJECT_DIR$/assets/template/speaker.html" />
         <option value="$PROJECT_DIR$/assets/template/sponsor.html" />
         <option value="$PROJECT_DIR$/assets/template/team.html" />
         <option value="$PROJECT_DIR$/assets/css/app.css" />
+        <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -263,6 +203,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\TRABAJO\GDG LIMA\AndroidTour\website\git\android-tour-web\js" />
       <recent name="G:\TRABAJO\GDG LIMA\AndroidTour\website\git\android-tour-web\assets\images" />
       <recent name="G:\TRABAJO\GDG LIMA\AndroidTour\website\git\android-tour-web\js\lib" />
       <recent name="G:\TRABAJO\GDG LIMA\AndroidTour\website\git\android-tour-web\assets\css" />
@@ -409,13 +350,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="3" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/template/androidtour.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -425,7 +359,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/template/program.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="7" selection-start="152" selection-end="152" vertical-scroll-proportion="-3.75">
+        <state line="5" column="7" selection-start="152" selection-end="152" vertical-scroll-proportion="0.18620689">
           <folding />
         </state>
       </provider>
@@ -453,21 +387,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="1" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0">
+        <state line="12" column="1" selection-start="259" selection-end="259" vertical-scroll-proportion="0.036096256">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="19" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0">
+        <state line="43" column="19" selection-start="561" selection-end="561" vertical-scroll-proportion="0.92904073">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="59" selection-start="2489" selection-end="2489" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Circle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="51" selection-start="3082" selection-end="3082" vertical-scroll-proportion="1.8342696">
+        <state line="110" column="50" selection-start="4862" selection-end="4862" vertical-scroll-proportion="0.6966292">
           <folding />
         </state>
       </provider>
