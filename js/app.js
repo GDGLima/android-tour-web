@@ -6,9 +6,9 @@
  * To change this template use File | Settings | File Templates.
  */
     const TOTALCIRCLE=10;
-    const POSITIONR=900;
-    const POSITIONL=50;
-    const POSXCIRCLE=400;
+    const POSITIONR=1000;
+    const POSITIONL=200;
+    const POSXCIRCLE=530;
 
     var stage;
     var pictures=new Array();
@@ -21,7 +21,7 @@
 
 $(document).ready(function()
 {
-    console.log("NO SEAN SAPOS" , "HOLA PIÑAN");
+    // console.log("NO SEAN SAPOS" , "HOLA PIÑAN");
     console.log("ready ...",window.innerWidth);
     $('#pagecontent').hide();
     canvas=document.getElementById("canvas");
@@ -89,8 +89,12 @@ function initHeader()
 function initCanvas()
 {
     // JQUERY4U.WIDGETS.TWITTER.init();
-       // canvas= document.getElementById("canvas");
-        canvas.style.width=window.innerWidth+'px';
+        var canvas= document.getElementById("canvas");
+        if(canvas == null)
+            return;
+
+        // canvas.style.width=window.innerWidth+'px';
+        canvas.style.width = "100%";
         stage=new createjs.Stage(canvas);
         createjs.Touch.enable(stage);
         stage.enableMouseOver();
