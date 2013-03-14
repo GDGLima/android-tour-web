@@ -86,26 +86,12 @@
         </div><!-- /.navbar-wrapper -->
       </header>
 
-<<<<<<< HEAD
-      <!-- /* <div class="hero-unit">
-        <div id="pagecontent" width="1170" height="350">
-        </div>
-=======
+
       <div class="container" id="page-container">
->>>>>>> Load Ajax Added
         <canvas id="canvas" width="1170" height="350">
         </canvas>
-      </div> */ -->
+      </div>
 
-    <div class="container">
-      <!-- canvas -->
-       <div class="hero-unit">
-           <div id="pagecontent" width="1170" height="350">
-           </div>
-          <canvas id="canvasapp" width="1024" height="420">
-                       alternate content
-          </canvas>
-       </div>
       <!-- Example row of columns -->
           <div class="row">
             <div class="span4">
@@ -198,6 +184,7 @@
       {
         var href = jQuery(this).attr("href");
         console.log(href+" ; "+nav_links[href]);
+        jQuery("#page-container").html("<img src='assets/img/loader.gif'>")
         jQuery("#page-container").load(nav_links[href]);
       });
 
