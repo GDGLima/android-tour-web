@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>GDGLima &middot; Android XEyes</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Alevandie Urbina Lopez">
+  <meta name="author" content="GDG Lima">
+  <meta name="email" content="daulys2@gmail.com">
+
+  <script type="text/javascript">   
+    function loadMiradita() {}    
+  </script>
+  <script type="text/javascript" src="xEyes-14.js"></script>
+  <script type="text/javascript">
+
+   var dali;
+    function initEyes()
+    {
+      var e1Lft = 41.50;   // %width to center wrt face top left  166/400=41.50
+      var e1Top = 34.08;   // %height      ''         ''          212/622=34.08
+      var e2Lft = 69.75;   //                                     279/400=69.25
+      var e2Top = 34.24;   //                                     213/622=34.24
+      var e1Radius = 2.3;  // %width of face
+      var e2Radius = 2.3;
+      // Xeyes(faceId, e1Id, e1Lft, e1Top, e1Radius, e2Id, e2Lft, e2Top, e2Radius);
+      dali = new Xeyes("face", "leftEye", e1Lft, e1Top, e1Radius, "rightEye", e2Lft, e2Top, e2Radius);
+    }
+  </script>
+
+  <style type="text/css" media="screen">      
+
+    #frame {
+      position: relative;
+      z-index: 0;  
+      width: 320px;
+      height: 500px;
+      margin: 2em auto;
+      padding: 5px;
+      border: 0;
+      background-color: #FFF;
+    }
+
+      #picHolder {
+      position: relative;
+      z-index: 0; 
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    #sockets {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 320px;   
+      z-index: 0;
+    }
+
+    #face {
+    	position: relative;     
+      top: 0;
+      left: 0;
+      width: 320px;   
+      z-index: 1;
+    }
+
+    #leftEye {
+      position: absolute;
+      left: 122px;      
+      top: 165px;
+      width: 20px;
+      z-index: 0;
+    }
+
+    #rightEye {
+      position: absolute;
+      left: 212px;     
+      top: 165px;
+      width: 20px;
+      z-index: 0;
+    }
+  </style>
+
+</head>
+
+<body onload="loadMiradita('indexNested.json');initEyes();">
+<div id="frame">
+  <div id="picHolder">
+    <img id="sockets" src="Images/socket.png" alt=""/>
+    <img id="face" src="Images/PNG_droid.png" alt="face" />
+    <img id="leftEye" src="Images/PNG_eyes" alt="eye" />
+    <img id="rightEye" src="Images/PNG_eyes" alt="eye" />
+  </div>
+</div>
+</body>
+</html>

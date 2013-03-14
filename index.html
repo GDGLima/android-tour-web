@@ -2,55 +2,89 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Android Tour Per&#250;</title>
+    <title>GDGLima &middot; Android Tour Peru</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="author" content="Eduardo Medina Alfaro">
-      <meta name="author" content="GDG Lima">
-      <meta name="email" content="emedinaa@gmail.com">
-      <meta charset="UTF-8">
+    <meta name="author" content="Eduardo Medina Alfaro">
+    <meta name="author" content="GDG Lima">
+    <meta name="email" content="emedinaa@gmail.com">
 
-    <!-- Le styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/app.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="js/lib/html5shiv.js"></script>
+      <script src="../assets/js/html5shiv.js"></script>
     <![endif]-->
 
     <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
   </head>
 
   <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="#" id="home">GDG Lima</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="#" id="btnHome">Android Tour</a></li>
-              <li><a href="#programa" id="btnProgram">Programa</a></li>
-              <li><a href="#expositores" id="btnSpeaker">Expositores</a></li>
-              <li><a href="#sponsor" id="btnSponsor">Sponsor</a></li>
-              <li><a href="#team" id="btnTeam">Colaboradores</a></li>
+    <div class="container">
 
-            </ul>
-          </div><!--/.nav-collapse -->
+      <header>
+        <!-- NAVBAR
+        ================================================== -->
+        <div class="navbar-wrapper">
+          <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+          <div class="container">
+
+            <div class="navbar navbar-inverse">
+              <div class="navbar-inner">
+                <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+
+                <a class="brand" href="http://www.gdglima.pe">Android Tour Per&uacute;</a>
+
+                <a class="brand" href="http://www.gdglima.pe">GDGLima</a>
+
+                <div class="nav-collapse collapse">
+
+                  <ul class="nav">
+                    <li>
+                      <a href="nav_androidtour.html" class="opcion1">
+                        Android Tour
+                      </a>
+                    </li>
+
+                    <li><a href="nav_programa.html" class="opcion2">Programa</a></li>
+                    <li><a href="nav_speaker.html" class="opcion3">Speakers</a></li>
+                    <li><a href="nav_sponsor.html" class="opcion4">Sponsors</a></li>
+                    <li><a href="nav_team.html" class="opcion5">Colaboradores</a></li>
+                  </ul>
+
+                </div><!--/.nav-collapse -->
+
+              </div><!-- /.navbar-inner -->
+            </div><!-- /.navbar -->
+
+          </div> <!-- /.container -->
+        </div><!-- /.navbar-wrapper -->
+      </header>
+
+      <div class="hero-unit">
+        <div id="pagecontent" width="1170" height="350">
         </div>
+        <canvas id="canvas" width="1170" height="350">
+        </canvas>
       </div>
-    </div>
 
     <div class="container">
       <!-- canvas -->
@@ -80,34 +114,55 @@
             </div>
           </div>
 
-      <footer>
-          <div class="container">
-              <div class="row">
-                  <div class="span2">
-                      <p>&copy; GDG Lima  2013</p>
-                  </div>
-                  <div class="span6">
-                  </div>
-                  <div class="span3">
-                      <span>S&iacute;guenos:</span>
-                      <a href="https://plus.google.com/u/0/106035957065756239824/posts" id="network_plus" title="Síguenos en Google+" target="_blank" rel="nofollow"><img src="assets/images/footer_gplus.png"></a>
-                      <a href="http://www.twitter.com/gdglima" id="network_twitter" title="Síguenos en Twitter" target="_blank" rel="nofollow"><img src="assets/images/footer_twitter.png"></a>
-                      <a href="https://www.facebook.com/gdglima" id="network_facebook" title="Síguenos en Facebook" target="_blank" rel="nofollow"><img src="assets/images/footer_facebook.png"></a>
-                 </div>
 
-                </div>
-          </div>
+      <!-- FOOTER -->
+      <footer>
+
+        <p class="pull-right">
+          <a href="#">Twitter</a> |
+          <a href="#">Facebook</a> |
+          <a href="#">Google Plus</a> |
+          <a href="#">Back to top</a>
+        </p>
+
+        <p>
+          <a href="#">@2013 GDGLima</a>
+          <a href="#">#AndroidTourPeru</a>
+        </p>
+
       </footer>
 
-    </div> <!-- /container -->
+    </div><!-- /.container -->
 
-    <!--  javascript
+    <!-- Le javascript
     ================================================== -->
-    <!-- scripts -->
-    <script type="text/javascript" src="js/lib/jquery-1.6.4.js"></script>
-    <script type="text/javascript" src="js/lib/twitter-search-api.js"></script>
-    <script type="text/javascript" src="js/lib/easing/EasePack.min.js"></script>
-    <script type="text/javascript" src="js/lib/easeljs-0.6.0.min.js"></script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+
+    <script type="text/javascript" src="js/lib/jquery-1.6.4.js">
+    </script>
+
+    <script type="text/javascript" src="js/lib/twitter-search-api.js">
+    </script>
+
+    <script type="text/javascript" src="js/lib/easing/EasePack.min.js">
+    </script>
+
+    <script type="text/javascript" src="js/lib/easeljs-0.6.0.min.js">
+    </script>
+
     <script type="text/javascript" src="js/lib/TweenLite.min.js"></script>
     <script type="text/javascript" src="js/lib/core/Utils.js"></script>
     <script type="text/javascript" src="js/lib/core/Config.js"></script>
@@ -115,6 +170,8 @@
     <script type="text/javascript" src="js/UserImg.js"></script>
     <script type="text/javascript" src="js/JoinLine.js"></script>
     <script type="text/javascript" src="js/SocialApp.js"></script>
+    <script src="assets/js/holder/holder.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
+
   </body>
 </html>

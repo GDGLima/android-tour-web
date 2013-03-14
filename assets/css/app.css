@@ -4,8 +4,9 @@ html
 }
 body
 {
-   padding-top: 50px;
-   padding-bottom: 0px;
+    padding: 0;
+    margin: 0;
+    background: #FFFFFF;
 }
 #pagecontent
 {
@@ -46,8 +47,111 @@ footer a#network_facebook
     height: 50px;
 }
 
+<<<<<<< HEAD
 <!-- /* canvas */ -->
 #canvas
 {
     border: 1px inset #333333;
 }
+=======
+.container{
+    width: 100%;
+}
+
+.navbar
+{
+    margin-bottom: 0;
+}
+
+.navbar-inner{
+    padding: 0;
+}
+
+.navbar-inverse .navbar-inner
+{
+    background: #f1f1f1;
+    border: none;
+    color: #000000;
+}
+
+.navbar-inverse .brand
+{
+    color: #000000;
+}
+
+.navbar-inverse .nav > li > a
+{
+    display: table-cell;
+    height: 80px;
+    padding: 0 15px;
+    padding-bottom: 15px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 10pt;
+    vertical-align: bottom;
+    opacity: 0.5;
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+}
+
+.navbar-inverse .nav > li > a:focus,
+.navbar-inverse .nav > li > a:hover {
+    opacity: 1.0;
+}
+
+.navbar-inverse .nav a.opcion1, 
+.navbar-inverse .nav > li > a.opcion1:focus,
+.navbar-inverse .nav > li > a.opcion1:hover {
+    background: #da4940;
+}
+
+.navbar-inverse .nav a.opcion2, 
+.navbar-inverse .nav > li > a.opcion2:focus,
+.navbar-inverse .nav > li > a.opcion2:hover{
+    background: #4d8cf6;
+}
+
+.navbar-inverse .nav a.opcion3, 
+.navbar-inverse .nav > li > a.opcion3:focus,
+.navbar-inverse .nav > li > a.opcion3:hover{
+    background: #0a9953;
+}
+
+.navbar-inverse .nav a.opcion4, 
+.navbar-inverse .nav > li > a.opcion4:focus,
+.navbar-inverse .nav > li > a.opcion4:hover{
+    background: #f8c63f;
+}
+
+.navbar-inverse .nav a.opcion5, 
+.navbar-inverse .nav > li > a.opcion5:focus,
+.navbar-inverse .nav > li > a.opcion5:hover{
+    background: #4c4a4b;
+}
+
+.navbar .nav {
+    float: right;
+    margin: 0;
+}
+
+.hero-unit
+{
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    margin: 0;
+    padding: 0;
+    bottom: 0px;
+    position: relative;
+    clear: both;
+    z-index: 10;
+    width: 100%;
+    height: 60px;
+}
+
+>>>>>>> 0f9c862894fd0de90caa6def36855e6c9c2e792b
