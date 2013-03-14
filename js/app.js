@@ -29,7 +29,7 @@ $(document).ready(function()
     // console.log("NO SEAN SAPOS" , "HOLA PIÑAN");
     console.log("ready ...",window.innerWidth);
     $('#pagecontent').hide();
-    canvas=document.getElementById("canvas");
+    canvas=document.getElementById("canvasapp");
     content=document.getElementById("pagecontent");
 
     //header

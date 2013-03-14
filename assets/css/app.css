@@ -47,13 +47,13 @@ footer a#network_facebook
     height: 50px;
 }
 
-<<<<<<< HEAD
+
 <!-- /* canvas */ -->
-#canvas
+#canvasapp
 {
     border: 1px inset #333333;
 }
-=======
+
 .container{
     width: 100%;
 }
@@ -154,4 +154,3 @@ footer{
     height: 60px;
 }
 
->>>>>>> 0f9c862894fd0de90caa6def36855e6c9c2e792b
