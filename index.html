@@ -32,15 +32,11 @@
 
   <body>
 
-    <div class="container">
-
       <header>
         <!-- NAVBAR
         ================================================== -->
         <div class="navbar-wrapper">
           <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
-          <div class="container">
-
             <div class="navbar navbar-inverse">
               <div class="navbar-inner">
                 <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
@@ -58,43 +54,44 @@
                 <div class="nav-collapse collapse">
 
                   <ul class="nav">
+
                     <li>
-                      <a href="nav_androidtour.html" class="opcion1">
+                      <a href="#android-tour" class="opcion1">
                         Android Tour
                       </a>
                     </li>
 
-                    <li><a href="nav_programa.html" class="opcion2">Programa</a></li>
-                    <li><a href="nav_speaker.html" class="opcion3">Speakers</a></li>
-                    <li><a href="nav_sponsor.html" class="opcion4">Sponsors</a></li>
-                    <li><a href="nav_team.html" class="opcion5">Colaboradores</a></li>
+                    <li>
+                      <a href="#programa" class="opcion2">Programa</a>
+                    </li>
+
+                    <li>
+                      <a href="#speaker" class="opcion3">Speakers</a>
+                    </li>
+
+                    <li>
+                      <a href="#sponsor" class="opcion4">Sponsors</a>
+                    </li>
+
+                    <li>
+                      <a href="#team" class="opcion5">Colaboradores</a>
+                    </li>
+
                   </ul>
 
                 </div><!--/.nav-collapse -->
 
               </div><!-- /.navbar-inner -->
             </div><!-- /.navbar -->
-
-          </div> <!-- /.container -->
         </div><!-- /.navbar-wrapper -->
       </header>
 
-      <!-- /* <div class="hero-unit">
-        <div id="pagecontent" width="1170" height="350">
-        </div>
+
+      <div class="container" id="page-container">
         <canvas id="canvas" width="1170" height="350">
         </canvas>
-      </div> */ -->
+      </div>
 
-    <div class="container">
-      <!-- canvas -->
-       <div class="hero-unit">
-           <div id="pagecontent" width="1170" height="350">
-           </div>
-          <canvas id="canvasapp" width="1024" height="420">
-                       alternate content
-          </canvas>
-       </div>
       <!-- Example row of columns -->
           <div class="row">
             <div class="span4">
@@ -131,8 +128,6 @@
         </p>
 
       </footer>
-
-    </div><!-- /.container -->
 
     <!-- Le javascript
     ================================================== -->
@@ -172,6 +167,29 @@
     <script type="text/javascript" src="js/SocialApp.js"></script>
     <script src="assets/js/holder/holder.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
+
+    <script type="text/javascript">
+    jQuery(document).ready(function()
+    {
+      var nav_links =
+      {
+        "#android-tour" : "nav_androidtour.html",
+        "#programa" : "nav_programa.html",
+        "#speaker" : "nav_speaker.html",
+        "#sponsor" : "nav_sponsor.html",
+        "#team" : "nav_team.html"
+      };
+
+      jQuery("ul.nav li a").click(function()
+      {
+        var href = jQuery(this).attr("href");
+        console.log(href+" ; "+nav_links[href]);
+        jQuery("#page-container").html("<img src='assets/img/loader.gif'>")
+        jQuery("#page-container").load(nav_links[href]);
+      });
+
+    });
+    </script>
 
   </body>
 </html>
