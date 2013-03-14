@@ -17,6 +17,7 @@
     p.count = 0;
     //p.aux=new Object();
     p.image;
+    p.posX=0;
 
     p.Container_initialize = p.initialize;
     p.initialize = function(info,image)
@@ -34,14 +35,15 @@
 
         //background
         this.background = new createjs.Shape();
-        this.background.graphics.beginFill("#FFFFFF");//F0F0F0 #7C8CC7 424242
-        this.background.graphics.drawRect(0,0,52,52);
+       // this.background.graphics.beginFill("#FFFFFF");//F0F0F0 #7C8CC7 424242
+        this.background.graphics.beginFill("#DA4940");//F0F0F0 #7C8CC7 424242
+        this.background.graphics.drawRect(0,0,49,49);
         this.background.graphics.endFill();
         this.addChild(this.background);
         //this.background.alpha=0.01;
         this.addChild(bitmap);
-        this.background.x=-2;
-        this.background.y=-2;
+        this.background.x=-0.8;//-2
+        this.background.y=0;
 
         this.background.addEventListener("mouseover", this.handleOver);
         this.background.addEventListener("mouseout", this.handleOut);

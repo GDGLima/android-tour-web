@@ -1,12 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/js/app.js" line="34" />
     <bookmark url="file://$PROJECT_DIR$/js/app.js" line="57" />
+    <bookmark url="file://$PROJECT_DIR$" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1e3ea39-660e-4988-a007-a7d6fb362087" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/android.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CODE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/CircleAndroid.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/JoinLine.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/SocialApp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib/core/Config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib/core/Utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/index2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/js/Circle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/js/app2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/js/lib/TweenLite.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/js/lib/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/js/lib/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/js/lib/easeljs-0.6.0.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/js/lib/easing/EasePack.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/js/lib/html5shiv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/js/lib/jquery-1.6.4.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/js/lib/testmanu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/js/lib/twitter-search-api.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/app.css" afterPath="$PROJECT_DIR$/assets/css/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/UserImg.js" afterPath="$PROJECT_DIR$/js/UserImg.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
     </list>
     <ignored path="android-tour-web.iws" />
@@ -26,49 +49,43 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="android-tour-web" />
+    <favorites_list name="android tour">
+      <favorite_root url="file://$PROJECT_DIR$" module="android-tour-web" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+    </favorites_list>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="31" selection-start="3082" selection-end="3082" vertical-scroll-proportion="-12.75">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="168" column="37" selection-start="4898" selection-end="4898" vertical-scroll-proportion="0.36096257">
+            <state line="37" column="13" selection-start="816" selection-end="816" vertical-scroll-proportion="-0.64973265">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/app.css">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="1" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0">
+            <state line="107" column="26" selection-start="4542" selection-end="4542" vertical-scroll-proportion="-20.666666">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sponsor.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/template/sponsor.html">
+      <file leaf-file-name="CODE.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CODE.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="184" column="23" selection-start="5157" selection-end="5157" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="program.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/template/program.html">
+      <file leaf-file-name="SocialApp.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/SocialApp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="23" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0">
+            <state line="220" column="22" selection-start="6289" selection-end="6289" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -89,21 +106,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/assets/template/programa.html" />
-        <option value="$PROJECT_DIR$/assets/template/androidtour.html" />
-        <option value="$PROJECT_DIR$/assets/template/speaker.html" />
-        <option value="$PROJECT_DIR$/assets/template/team.html" />
         <option value="$PROJECT_DIR$/assets/template/sponsor.html" />
         <option value="$PROJECT_DIR$/assets/template/program.html" />
+        <option value="$PROJECT_DIR$/test/js/lib/trail.js" />
+        <option value="$PROJECT_DIR$/test/js/app2.js" />
+        <option value="$PROJECT_DIR$/test/index2.html" />
+        <option value="$PROJECT_DIR$/test/js/lib/testmanu.js" />
+        <option value="$PROJECT_DIR$/js/UserImg.js" />
         <option value="$PROJECT_DIR$/assets/css/app.css" />
+        <option value="$PROJECT_DIR$/js/lib/core/Utils.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/JoinLine.js" />
+        <option value="$PROJECT_DIR$/js/lib/core/Config.js" />
+        <option value="$PROJECT_DIR$/js/CircleAndroid.js" />
+        <option value="$PROJECT_DIR$/js/SocialApp.js" />
+        <option value="$PROJECT_DIR$/CODE.txt" />
         <option value="$PROJECT_DIR$/js/app.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="58" />
-    <option name="y" value="-4" />
+    <option name="x" value="-88" />
+    <option name="y" value="120" />
     <option name="width" value="1386" />
     <option name="height" value="908" />
   </component>
@@ -170,29 +194,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android-tour-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android-tour-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -206,11 +212,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -224,14 +234,22 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\TRABAJO\GDG LIMA\AndroidTour\website\git\android-tour-web\assets\images" />
       <recent name="G:\TRABAJO\GDG LIMA\AndroidTour\website\git\android-tour-web\js" />
+      <recent name="G:\TRABAJO\GDG LIMA\AndroidTour\website\git\android-tour-web\assets\images" />
       <recent name="G:\TRABAJO\GDG LIMA\AndroidTour\website\git\android-tour-web\js\lib" />
-      <recent name="G:\TRABAJO\GDG LIMA\AndroidTour\website\git\android-tour-web\assets\css" />
-      <recent name="G:\TRABAJO\GDG LIMA\AndroidTour\website\git\android-tour-web" />
+      <recent name="G:\TRABAJO\GDG LIMA\AndroidTour\website\git\android-tour-web\test\js" />
+      <recent name="G:\TRABAJO\GDG LIMA\AndroidTour\website\git\android-tour-web\test" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <method>
+        <option name="PhingTarget" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
       <JSDebuggerConfigurationSettings>
         <option name="engineId" value="embedded" />
@@ -242,6 +260,24 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <configuration useDefault="true">C:\Users\emedinaa\AppData\Roaming\Subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b1e3ea39-660e-4988-a007-a7d6fb362087" name="Default" comment="" />
@@ -251,13 +287,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="-4" width="1386" height="908" extended-state="6" />
-    <editor active="true" />
+    <frame x="-88" y="120" width="1386" height="908" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18795356" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2801161" sideWeight="0.0" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -325,54 +361,59 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/lib/twitter-search-api.js">
+    <entry file="file://$PROJECT_DIR$/test/js/app2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="86" column="6" selection-start="2093" selection-end="2093" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/lib/TweenLite.min.js">
+    <entry file="file://$PROJECT_DIR$/test/index2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="16" column="59" selection-start="723" selection-end="723" vertical-scroll-proportion="-12.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/lib/jquery-1.6.4.js">
+    <entry file="file://$PROJECT_DIR$/test/js/lib/testmanu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="21" column="20" selection-start="556" selection-end="556" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/lib/bootstrap.min.js">
+    <entry file="file://$PROJECT_DIR$/test/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="37" column="0" selection-start="871" selection-end="918" vertical-scroll-proportion="0.95498395" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/lib/html5shiv.js">
+    <entry file="file://$PROJECT_DIR$/assets/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="51" column="13" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/bootstrap.css">
+    <entry file="file://$PROJECT_DIR$/js/lib/core/Utils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="1" selection-start="259" selection-end="259" vertical-scroll-proportion="0.036096256" />
+        <state line="9" column="22" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/UserImg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="11" selection-start="360" selection-end="360" vertical-scroll-proportion="0.14438502" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/JoinLine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="6" selection-start="1683" selection-end="1749" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/Circle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="29" column="0" selection-start="720" selection-end="859" vertical-scroll-proportion="0.036096256" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/template/androidtour.html">
+    <entry file="file://$PROJECT_DIR$/js/CircleAndroid.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="21" vertical-scroll-proportion="-0.0" />
+        <state line="63" column="0" selection-start="1798" selection-end="1798" vertical-scroll-proportion="0.036096256" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/template/speaker.html">
+    <entry file="file://$PROJECT_DIR$/js/lib/core/Config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="11" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/template/team.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="8" selection-start="8" selection-end="8" vertical-scroll-proportion="0.0" />
+        <state line="17" column="31" selection-start="372" selection-end="372" vertical-scroll-proportion="0.39027596" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -380,33 +421,26 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/app.css">
+    <entry file="file://$PROJECT_DIR$/CODE.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="1" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0" />
+        <state line="184" column="23" selection-start="5157" selection-end="5157" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/template/sponsor.html">
+    <entry file="file://$PROJECT_DIR$/js/SocialApp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/template/program.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="23" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="220" column="22" selection-start="6289" selection-end="6289" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="31" selection-start="3082" selection-end="3082" vertical-scroll-proportion="-12.75">
+        <state line="107" column="26" selection-start="4542" selection-end="4542" vertical-scroll-proportion="-20.666666">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="168" column="37" selection-start="4898" selection-end="4898" vertical-scroll-proportion="0.36096257">
+        <state line="37" column="13" selection-start="816" selection-end="816" vertical-scroll-proportion="-0.64973265">
           <folding />
         </state>
       </provider>
