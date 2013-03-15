@@ -6,8 +6,15 @@ body
 {
     padding: 0;
     margin: 0;
-    background: #FFFFFF;
-    text-align: center;
+    background: #F1F1F1;
+    /*text-align: center;*/
+    font-size: 20px;
+    line-height: 24px;
+}
+
+a:link{
+    text-decoration:none;
+
 }
 #pagecontent
 {
@@ -59,7 +66,7 @@ footer a#network_facebook
 }
 
 .container{
-    width: 100%;
+    /*width: 100%;*/
 }
 
 .navbar
@@ -70,6 +77,11 @@ footer a#network_facebook
 .navbar-inner{
     padding: 0;
 }
+
+.navbar-inner a.brand{
+    padding-left: 40px;
+}
+
 
 .navbar-inverse .navbar-inner
 {
@@ -106,31 +118,31 @@ footer a#network_facebook
     opacity: 1.0;
 }
 
-.navbar-inverse .nav a.opcion1, 
+.navbar-inverse .nav a.opcion1,
 .navbar-inverse .nav > li > a.opcion1:focus,
 .navbar-inverse .nav > li > a.opcion1:hover {
     background: #da4940;
 }
 
-.navbar-inverse .nav a.opcion2, 
+.navbar-inverse .nav a.opcion2,
 .navbar-inverse .nav > li > a.opcion2:focus,
 .navbar-inverse .nav > li > a.opcion2:hover{
     background: #4d8cf6;
 }
 
-.navbar-inverse .nav a.opcion3, 
+.navbar-inverse .nav a.opcion3,
 .navbar-inverse .nav > li > a.opcion3:focus,
 .navbar-inverse .nav > li > a.opcion3:hover{
     background: #0a9953;
 }
 
-.navbar-inverse .nav a.opcion4, 
+.navbar-inverse .nav a.opcion4,
 .navbar-inverse .nav > li > a.opcion4:focus,
 .navbar-inverse .nav > li > a.opcion4:hover{
     background: #f8c63f;
 }
 
-.navbar-inverse .nav a.opcion5, 
+.navbar-inverse .nav a.opcion5,
 .navbar-inverse .nav > li > a.opcion5:focus,
 .navbar-inverse .nav > li > a.opcion5:hover{
     background: #4c4a4b;
@@ -148,7 +160,7 @@ footer a#network_facebook
 }
 
 footer{
-    background: #FFFFFF;
+    background: #FFFFFF url(../images/footer-hr.png) repeat-x;
     margin: 0;
     padding: 0;
     bottom: 0px;
@@ -172,4 +184,90 @@ footer p.pull-left
 footer p.pull-right
 {
     margin-right: 15px;
+}
+
+
+
+
+.banner{
+    max-height: 90px;
+    padding:15px;
+}
+.banner span{
+    color: #FFF;
+    font:50px Arial, sans-serif;
+}
+
+.headings{
+padding:15px 40px;
+}
+
+
+
+
+/*SPONSOR*/
+.sponsor{
+    /*Coloco separado el bg porque tapa un borde que quizas desean que si se muestre*/
+    background: #F1F1F1;
+    background: url(../images/android-sponsor.png) no-repeat;
+}
+
+.sponsors{
+    text-align:center;
+}
+
+.sponsors div{
+    background: #0A9953;
+    min-height: 200px;
+    margin-bottom: 50px;
+}
+
+
+/* ANDROID TOUR*/
+
+.tour{
+    background: #F1F1F1;
+    background: url(../images/2AndroidTour.png) no-repeat;
+}
+
+.tours{
+    margin-bottom: 50px;
+}
+
+
+/* SPEAKER*/
+
+.speaker{
+    background: #F1F1F1;
+    background: url(../images/android-speaker.png) no-repeat;
+}
+
+.speakers hr{
+    border: 0;
+    background: #0A9953;
+    height: 1px;
+}
+
+.speakers .row .span12 .row {
+    margin-bottom: 60px ;
+}
+
+
+
+/* PROGRAMA */
+
+.programa{
+    background: #F1F1F1;
+    background: url(../images/android-programa.png) no-repeat;
+}
+
+/* TEAM*/
+
+.team{
+    background: #F1F1F1;
+    background: url(../images/android-colaboradores.png) no-repeat;
+}
+
+.teams div{
+    margin-bottom: 50px;
 }
