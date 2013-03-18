@@ -21,9 +21,26 @@ a:link{
 }
 .row
 {
+
     padding-top: 10px;
     border: 1px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+
 }
+
+.rowdroid
+{
+
+    border: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90px;
+
+}
+
 .a
 {
     position:absolute;
