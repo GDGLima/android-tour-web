@@ -97,9 +97,9 @@ footer a#network_facebook
 
 .navbar-inverse .nav > li > a
 {
-    display: table-cell;
-    height: 80px;
-    padding: 0 15px;
+    /*display: table-cell;*/
+    height: 20px;
+    /*padding: 0 15px;*/
     padding-bottom: 15px;
     color: #FFFFFF;
     font-weight: bold;
@@ -122,6 +122,8 @@ footer a#network_facebook
 .navbar-inverse .nav > li > a.opcion1:focus,
 .navbar-inverse .nav > li > a.opcion1:hover {
     background: #da4940;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 0px;
 }
 
 .navbar-inverse .nav a.opcion2,
