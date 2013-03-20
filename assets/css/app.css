@@ -6,10 +6,13 @@ body
 {
     padding: 0;
     margin: 0;
-    background: #F1F1F1;
+    /*background: #F1F1F1;*/
     /*text-align: center;*/
     font-size: 20px;
     line-height: 24px;
+    background: #f9f9f9 url(../images/bg.jpg);
+    color: #333;
+    -webkit-font-smoothing: antialiased;
 }
 
 a:link{
