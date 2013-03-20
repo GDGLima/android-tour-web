@@ -72,6 +72,22 @@
 	background-image: url(../images/meison220.jpg);
 }
 
+.ch-img-15 { 
+	background-image: url(../images/niger220.jpg);
+}
+
+.ch-img-16 { 
+	background-image: url(../images/milton220.jpg);
+}
+
+.ch-img-17 { 
+	background-image: url(../images/geferson220.jpg);
+}
+
+.ch-img-18 { 
+	background-image: url(../images/jimmy220.jpg);
+}
+
 .ch-info {
 	position: absolute;
 	width: 100%;
@@ -98,7 +114,7 @@
 .ch-info h3 {
 	color: #fff;
 	text-transform: uppercase;
-	position: relative;
+	/*position: relative;*/
 	letter-spacing: 2px;
 	font-size: 22px;
 	margin: 0 30px;
