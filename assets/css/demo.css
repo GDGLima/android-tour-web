@@ -15,6 +15,12 @@ a{
 	width: 100%;
 	position: relative;
 }
+.container3{
+	width: 100%;
+	position: relative;
+	background: #FFF;
+
+}
 .clr{
 	clear: both;
 	padding: 0;
