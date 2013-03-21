@@ -233,3 +233,52 @@ function handleMouseOver(evt)
       //  initCanvas();
     //footer
        // initFooter();
+
+       function initCanvas()
+{
+    // JQUERY4U.WIDGETS.TWITTER.init();
+        var canvas= document.getElementById("canvas");
+        if(canvas == null)
+            return;
+
+        // canvas.style.width=window.innerWidth+'px';
+        canvas.style.width = "100%";
+        stage=new createjs.Stage(canvas);
+        createjs.Touch.enable(stage);
+        stage.enableMouseOver();
+
+        //draw circle
+        circle1=new Circle("GDGLima","#0FF");
+        circle2=new Circle("GDGArequipa","#0FF");
+        circle3=new Circle("AndroidTour","#0FF");
+        stage.addChild(circle1);
+        stage.addChild(circle2);
+        stage.addChild(circle3);
+
+        circle1.x=POSXCIRCLE;
+        circle1.y=100;
+
+        circle2.x=POSXCIRCLE+150;
+        circle2.y=80;
+
+        circle3.x=POSXCIRCLE+120;
+        circle3.y=220;
+
+        circle1.scaleX=0;
+        circle1.scaleY=0;
+
+        circle2.scaleX=0;
+        circle2.scaleY=0;
+
+        circle3.scaleX=0;
+        circle3.scaleY=0;
+
+        circle1.aux=1;
+        circle2.aux=0.8;
+        circle3.aux=0.9;
+
+        TweenLite.to(circle1, 0.6, {alpha:1,scaleX:1,scaleY:1,delay:1});
+        TweenLite.to(circle2, 0.6, {alpha:1,scaleX:0.8,scaleY:0.8,delay:1.3});
+        TweenLite.to(circle3, 0.6, {alpha:1,scaleX:0.9,scaleY:0.9,delay:1.6});
+        //events
+}

@@ -21,7 +21,7 @@ jQuery(document).ready(function()
   jQuery("ul.nav li a").click(function()
   {
     var key = jQuery(this).attr("href");
-    console.log("navigation ","key ",key);
+    console.log("navigation ","key "+key);
     loadURL(key);
   });
 
