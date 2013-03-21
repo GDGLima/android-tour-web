@@ -146,6 +146,29 @@ footer a#network_facebook
     border-bottom-left-radius: 0px;
 }
 
+.active1 {
+background: #da4940;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 0px;
+}
+
+.active2 {
+background: #4d8cf6;
+}
+
+.active3 {
+background: #0a9953;
+}
+
+.active4 {
+background: #f8c63f;
+}
+
+.active5 {
+background: #4c4a4b;
+}
+
+
 .navbar-inverse .nav a.opcion2,
 .navbar-inverse .nav > li > a.opcion2:focus,
 .navbar-inverse .nav > li > a.opcion2:hover{

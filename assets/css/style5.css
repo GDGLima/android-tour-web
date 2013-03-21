@@ -95,7 +95,8 @@
 
 .ch-info p a {
 	display: block;
-	color: #e7615e;
+	/*color: #e7615e;*/
+	color: #000000;
 	font-style: normal;
 	font-weight: 700;
 	text-transform: uppercase;
