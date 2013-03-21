@@ -126,6 +126,7 @@
     float: left;
     min-height: 1px;
     margin-left: 30px;
+
   }
   .container,
   .navbar-static-top .container,
@@ -145,6 +146,12 @@
   .span9 {
     width: 870px;
   }
+  .spanportada {
+    width: 851px;
+    height: 315px;
+	  background-image:url(../images/portada.jpg);
+    border-top-left-radius: 1000px;
+  }
   .span8 {
     width: 770px;
   }
@@ -162,6 +169,8 @@
   }
   .span3 {
     width: 270px;
+    text-align: center;
+
   }
   .span2 {
     width: 170px;
@@ -203,7 +212,8 @@
     margin-left: 230px;
   }
   .offset1 {
-    margin-left: 130px;
+    /*margin-left: 130px;*/
+    margin-top: 30px;
   }
   .row-fluid {
     width: 100%;
@@ -1023,7 +1033,10 @@
   }
   .navbar-inverse .nav-collapse .nav > li > a,
   .navbar-inverse .nav-collapse .dropdown-menu a {
-    color: #999999;
+    /*color: #999999;*/
+    color: #FFF;
+    margin-right: 200px;
+    width: 100%;
   }
   .navbar-inverse .nav-collapse .nav > li > a:hover,
   .navbar-inverse .nav-collapse .nav > li > a:focus,
