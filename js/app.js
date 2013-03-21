@@ -36,7 +36,21 @@ $(document).ready(function()
     socialapp=new SocialApp();
     socialapp.app();
 
+    //events
+    $(window).resize(resize_handler);
+    resize_handler();
+
 });
+function resize_handler(e) 
+{
+   var container = $("#canvasapp").parent();
+   $("#canvasapp").attr('width',$(container).width());
+   socialapp.resize();
+   /*
+    $("#canvasapp").attr('height',$(container).height());
+    console.log("container ",$(container).width());*/
+
+}
 
 //header -------------------------------------------
 function goHome(e)

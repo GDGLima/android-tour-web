@@ -24,6 +24,7 @@ var _arrRIGTH=[];
 var _posXLEFT=0;
 var _posXRIGTH=0;
 var _posXCircle=0;
+var _center=0;
 
 var SocialApp=function()
 {
@@ -32,8 +33,8 @@ var SocialApp=function()
     {
         console.log("init");
         _arrLine=[];
-        _posXLEFT=100;
-        _posXRIGTH=Config.STAGEWIDTH-100-40;
+        _posXLEFT=0;//100
+        _posXRIGTH=0;//Config.STAGEWIDTH-100-40;
 
         JQUERY4U.WIDGETS.TWITTER.setAux(this.showData);
     }
@@ -92,6 +93,30 @@ var SocialApp=function()
       // if(stage.chi)
        stage.removeChild(_obj);
     }
+
+    //resize screen ---------------------
+    this.resize=function ()
+    {
+        _center=$("#canvasapp").width()*0.5;
+        _posXCircle=_center-80;
+
+        circle1.x=_posXCircle;
+        circle1.y=140;
+
+        circle2.x=_posXCircle+170;
+        circle2.y=120;
+
+        circle3.x=_posXCircle+140;
+        circle3.y=260;
+
+        _posXLEFT=0;
+        _posXRIGTH=$("#canvasapp").width();
+
+        _arrRIGTH.forEach(function(el)
+        {
+            el.x=_posXRIGTH-30;
+        })
+    }
     //base ------------------------------------------
     //function --------------------------------------
 
@@ -117,7 +142,8 @@ var SocialApp=function()
         stage.addChild(circle2);
         stage.addChild(circle3);
 
-        _posXCircle=Config.STAGEWIDTH*0.5-50;
+       // _posXCircle=Config.STAGEWIDTH*0.5-50;
+        _posXCircle=_center*0.5-80;
 
         circle1.x=_posXCircle;
         circle1.y=140;
@@ -190,11 +216,11 @@ var SocialApp=function()
         var pX=0;
         if(rd<2)
         {
-            pX=_posXLEFT;
+            pX=_posXLEFT+80;
             user.posX=0;
         }else
         {
-            pX=_posXRIGTH;
+            pX=_posXRIGTH-160;
             user.posX=1;
         }
         user.x=Utils.randomByRange(pX,pX+50);
@@ -227,10 +253,10 @@ var SocialApp=function()
         var aux=0;
         if(_user.posX==0)
         {
-            aux=_posXLEFT-50;
+            aux=_posXLEFT+30;
         }else
         {
-            aux=_posXRIGTH+100;
+            aux=_posXRIGTH-30;
         }
         TweenLite.to(_user,0.2,{x:aux,onComplete:completeOrder,
             onCompleteParams:[_user]})
