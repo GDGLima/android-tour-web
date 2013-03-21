@@ -98,7 +98,7 @@ var SocialApp=function()
     this.resize=function ()
     {
         _center=$("#canvasapp").width()*0.5;
-        _posXCircle=_center-80;
+        _posXCircle=_center-60;
 
         circle1.x=_posXCircle;
         circle1.y=140;
@@ -114,7 +114,7 @@ var SocialApp=function()
 
         _arrRIGTH.forEach(function(el)
         {
-            el.x=_posXRIGTH-30;
+            el.x=_posXRIGTH-20;
         })
     }
     //base ------------------------------------------
@@ -143,7 +143,7 @@ var SocialApp=function()
         stage.addChild(circle3);
 
        // _posXCircle=Config.STAGEWIDTH*0.5-50;
-        _posXCircle=_center*0.5-80;
+        _posXCircle=_center*0.5-60;
 
         circle1.x=_posXCircle;
         circle1.y=140;
@@ -220,7 +220,7 @@ var SocialApp=function()
             user.posX=0;
         }else
         {
-            pX=_posXRIGTH-160;
+            pX=_posXRIGTH-100;
             user.posX=1;
         }
         user.x=Utils.randomByRange(pX,pX+50);
@@ -256,7 +256,7 @@ var SocialApp=function()
             aux=_posXLEFT+30;
         }else
         {
-            aux=_posXRIGTH-30;
+            aux=_posXRIGTH-20;
         }
         TweenLite.to(_user,0.2,{x:aux,onComplete:completeOrder,
             onCompleteParams:[_user]})
