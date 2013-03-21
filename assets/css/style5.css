@@ -47,7 +47,8 @@
 .ch-info .ch-info-back {
 	opacity: 0;
 
-	background: #223e87;
+	/*background: #223e87;*/
+	background: #099953;
 	pointer-events: none;
 	
 	-webkit-transform: scale(1.5);
