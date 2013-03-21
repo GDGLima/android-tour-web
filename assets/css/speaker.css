@@ -1,10 +1,12 @@
+/* Speakers part */
+
 .ch-grid {
 	margin: 20px 0 0 0;
 	padding: 0;
 	list-style: none;
 	display: block;
 	text-align: center;
-	width: 100%;
+	width: 50px;
 
 }
 
@@ -24,5 +26,3 @@
 	display: inline-block;
 	margin: 20px;
 }
-
-
