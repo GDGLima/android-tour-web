@@ -1,5 +1,4 @@
-/*
- * Created by JetBrains WebStorm.
+ /* Created by JetBrains WebStorm.
  * User: emedinaa
  * Date: 24/02/13
  * Time: 08:42 PM
@@ -36,6 +35,7 @@ $(document).ready(function()
     initHeader();
     socialapp=new SocialApp();
     socialapp.app();
+
 });
 
 //header -------------------------------------------
@@ -88,6 +88,20 @@ function initHeader()
     $('#btnSponsor').bind("click",navigationHandler);
     $('#btnTeam').bind("click",navigationHandler);
     $('#home').bind("click",goHome);
+
+    console.log("div android ",$("#divandroid"));
+    //$("#divandroid").width("0px");
+    
+    if($("#divandroid"))
+    {
+       // TweenLite.to("#divandroid", 1, { scaleX:0.5});
+       // $("#divandroid").animate({left:'-100px'})
+        //$("#divandroid").animate({width:'100%'},"slow")
+        $("#divandroid").hide();
+        $("#divandroid").fadeIn("slow");
+       // $("#divandroid").show({effect:"scale", direction: 'horizontal',origin:'middle' });
+
+    }
 }
 //container -------------------------------------------
 
