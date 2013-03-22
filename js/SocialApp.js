@@ -44,7 +44,6 @@ var SocialApp=function()
        // console.log("showdata");
         $(data.results).each(function(i,v)
         {
-           // console.log("data ",this);
            var obj=new Object();
           // console.log("user >>>>",this.from_user," id ",this.id, " img ",this.profile_image_url+ " txt ",this.text);
            obj.id=this.id;
@@ -57,7 +56,6 @@ var SocialApp=function()
        // console.log("tweet ",tweetData.length);
         initTweet();
     }
-
     //base ------------------------------------------
     this.app=function()
     {
@@ -140,7 +138,7 @@ var SocialApp=function()
         //draw circle
         circle1=new CircleAndroid(Config.HASHTAG_ATP,"#C5423A",150,"androidtourperu");
         circle2=new CircleAndroid(Config.HASHTAG_GDGAREQUIPA,"#0A9853",150,"gdgarequipa");//("GDGArequipa","#0FF");
-        circle3=new CircleAndroid(Config.HASHTAG_GDGLIMA,"#F8C63F",150,"gdglima");//("AndroidTour","#0FF");
+        circle3=new CircleAndroid(Config.HASHTAG_GDGLIMA,"#F8C63F",150,"gaglima");//("AndroidTour","#0FF");
         stage.addChild(circle1);
         stage.addChild(circle2);
         stage.addChild(circle3);
@@ -178,6 +176,104 @@ var SocialApp=function()
         circle3.addEventListener("mouseout", handleMouseOut);
     }
 
+    function addTweet()
+    {
+        if(_current>=tweetData.length)
+        {
+            _current=0;
+            return;
+        }
+        //console.log(">>>> add Tweet ");
+        var img = new Image();
+        img.src = tweetData[_current].url;//"assets/daisy.png";
+        img.onload = handleImageLoad;
+        img.aux=_current;
+        img.hashtag="gdglima";
+    }
+    function handleImageLoad(event)
+    {
+        var indice=event.target.aux;
+        var hashtag=event.target.hashtag;
+
+        if(indice>tweetData.length)return;
+        var posX=0;
+        var posY=0;
+        var image = event.target;
+        var user=new UserImg(tweetData[indice],image,hashtag);
+        user.regX=30;
+        user.regY=30;
+        stage.addChild(user);
+        user.alpha=0;
+        user.scaleX=0;
+        user.scaleY=0;
+       // TweenLite.to(user, 0.4, {alpha:1,scaleX:1,scaleY:1,delay:(1+0.15*i)});
+        TweenLite.to(user, 0.2, {alpha:1,scaleX:1,scaleY:1,
+                onComplete:completeUser,
+                onCompleteParams:[user,indice]});
+        var rd=Utils.randomByRange(1,3);
+        //console.log("pX ",rd);
+        var pX=0;
+        if(rd<2)
+        {
+            pX=_posXLEFT+100;
+            user.posX=0;
+        }else
+        {
+            pX=_posXRIGTH-100;
+            user.posX=1;
+        }
+        user.x=Utils.randomByRange(pX,pX+50);
+        user.y=Utils.randomByRange(50,300);
+    }
+    function completeUser(_user, _indice)
+    {
+        //_user.alpha=0;
+        TweenLite.to(_user, 0.2, {alpha:0,delay:0.6});
+        TweenLite.to(_user, 0.2, {alpha:1,delay:0.8,onComplete:completeUserOrder,
+                                    onCompleteParams:[_user,_indice]});
+    }
+    function completeUserOrder(_user, _indice)
+    {
+        //draw Line
+        //console.log("user hashtag ",_user.hashtag, "circle ",circle1.hashtag);
+        var auxCircle=null;
+        var color="#ff";
+ 
+        if(_user.hashtag==circle1.hashtag)
+        {
+            //console.log("hastag  1",_user.hashtag);
+            auxCircle=circle1;
+            color=circle1.color;
+        }else if(_user.hashtag==circle2.hashtag)
+        {
+            //console.log("hastag  2",_user.hashtag);
+            auxCircle=circle2;
+            color=circle2.color;
+        }else
+        {
+            //console.log("hastag  3",_user.hashtag);
+            auxCircle=circle3;
+            color=circle3.color;
+        }
+        //console.log("circle ",auxCircle);
+
+        var line=new JoinLine(this,color,_user.x,_user.y,auxCircle.x,auxCircle.y,_user.posX );
+        stage.addChild(line);
+        _arrLine.push(line);
+        TweenLite.to(line, 0.8, {alpha:0.2,onComplete:completeLine,
+            onCompleteParams:[line,_user,auxCircle]});
+    }
+    function completeLine(_line,_user,_auxCircle)
+    {
+        _line.state=0;
+        reorderElement(_user);
+
+        var aux=_auxCircle.aux+_factor;
+        if(aux>Config.SCALECIRCLEMAX)return;
+        _auxCircle.scaleX=aux;
+        _auxCircle.scaleY=aux;
+        _auxCircle.aux=aux;
+    }
     /* reordenar elementos */
     function reorderElement(_user)
     {
@@ -265,119 +361,6 @@ var SocialApp=function()
         })
     }
     //tweet ----------------------------------------------
-
-     function addTweet()
-    {
-        if(_current>=tweetData.length)
-        {
-            _current=0;
-            return;
-        }
-        //console.log(">>>> add Tweet ");
-        var img = new Image();
-        img.src = tweetData[_current].url;//"assets/daisy.png";
-        img.onload = handleImageLoad;
-        img.aux=_current;
-        var txt=tweetData[_current].txt;
-
-        if(txt.indexOf("gdglima")>0)
-        {
-            img.hashtag="gdglima";
-        }
-        if(txt.indexOf("gdgarequipa")>0)
-        {
-            img.hashtag="gdgarequipa";
-        }
-        if(txt.indexOf("androidtourperu")>0)
-        {
-            img.hashtag="androidtourperu";
-        }
-
-    }
-    function handleImageLoad(event)
-    {
-        var indice=event.target.aux;
-        var hashtag=event.target.hashtag;
-
-        if(indice>tweetData.length)return;
-        var posX=0;
-        var posY=0;
-        var image = event.target;
-        var user=new UserImg(tweetData[indice],image,hashtag);
-        user.regX=30;
-        user.regY=30;
-        stage.addChild(user);
-        user.alpha=0;
-        user.scaleX=0;
-        user.scaleY=0;
-       // TweenLite.to(user, 0.4, {alpha:1,scaleX:1,scaleY:1,delay:(1+0.15*i)});
-        TweenLite.to(user, 0.2, {alpha:1,scaleX:1,scaleY:1,
-                onComplete:completeUser,
-                onCompleteParams:[user,indice]});
-        var rd=Utils.randomByRange(1,3);
-        //console.log("pX ",rd);
-        var pX=0;
-        if(rd<2)
-        {
-            pX=_posXLEFT+100;
-            user.posX=0;
-        }else
-        {
-            pX=_posXRIGTH-100;
-            user.posX=1;
-        }
-        user.x=Utils.randomByRange(pX,pX+50);
-        user.y=Utils.randomByRange(50,300);
-    }
-    function completeUser(_user, _indice)
-    {
-        //_user.alpha=0;
-        TweenLite.to(_user, 0.2, {alpha:0,delay:0.6});
-        TweenLite.to(_user, 0.2, {alpha:1,delay:0.8,onComplete:completeUserOrder,
-                                    onCompleteParams:[_user,_indice]});
-    }
-    function completeUserOrder(_user, _indice)
-    {
-        //draw Line
-        //console.log("user hashtag ",_user.hashtag, "circle ",circle1.hashtag);
-        var auxCircle=null;
-        var color="#ff";
- 
-        if(_user.hashtag==circle1.hashtag)
-        {
-            //console.log("hastag  1",_user.hashtag);
-            auxCircle=circle1;
-            color=circle1.color;
-        }else if(_user.hashtag==circle2.hashtag)
-        {
-            //console.log("hastag  2",_user.hashtag);
-            auxCircle=circle2;
-            color=circle2.color;
-        }else
-        {
-            //console.log("hastag  3",_user.hashtag);
-            auxCircle=circle3;
-            color=circle3.color;
-        }
-        //console.log("circle ",auxCircle);
-
-        var line=new JoinLine(this,color,_user.x,_user.y,auxCircle.x,auxCircle.y,_user.posX );
-        stage.addChild(line);
-        _arrLine.push(line);
-        TweenLite.to(line, 0.8, {alpha:0.2,onComplete:completeLine,
-            onCompleteParams:[line,_user,auxCircle]});
-    }
-    function completeLine(_line,_user,_auxCircle)
-    {
-        _line.state=0;
-        reorderElement(_user);
-
-        var aux=_auxCircle.aux+_factor;
-        if(aux>Config.SCALECIRCLEMAX)return;
-        _auxCircle.scaleX=aux;
-        _auxCircle.scaleY=aux;
-        _auxCircle.aux=aux;
-    }
     function updateTweet()
     {
         addTweet();

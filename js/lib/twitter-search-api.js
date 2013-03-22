@@ -47,7 +47,7 @@
             //get the tweets from Twitter API
             //#gdglima
             //$.getJSON("http://search.twitter.com/search.json?q=jquery4u&rpp=5&callback=?", function(data)
-            $.getJSON("http://search.twitter.com/search.json?q=androidtourperu+OR+gdglima+OR+gdgarequipa&rpp=20&callback=?", function(data)
+            $.getJSON("http://search.twitter.com/search.json?q=gdglima&rpp=20&callback=?", function(data)
             {
                 aux(data);
                 // console.log(data.items.length);
