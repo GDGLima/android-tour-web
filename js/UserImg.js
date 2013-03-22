@@ -18,6 +18,7 @@
     p.image;
     p.posX=0;
     p.hashtag="";
+    p.from_user="";
 
     p.Container_initialize = p.initialize;
     p.initialize = function(info,image,_hashtag)
@@ -27,6 +28,7 @@
         this.info = info;
         this.image = image;
         this.hashtag=_hashtag;
+        this.from_user=info.user;
 
         //bitmap
         var bitmap = new createjs.Bitmap(image);
@@ -51,7 +53,7 @@
     {
         var target = event.target;
        // console.log("info >> ",target.parent.info.txt);
-        stage.canvas.title = 'tweet '+target.parent.info.txt;
+        stage.canvas.title = 'tweet '+target.parent.info.user+':'+target.parent.info.txt;
         TweenLite.to(target.parent,0.5,{scaleX:1.2,scaleY:1.2, ease:Back.easeOut});
     }
     p.handleOut = function (event)
