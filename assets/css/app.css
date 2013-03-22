@@ -24,12 +24,8 @@ a:link{
 }
 .row
 {
-
     padding-top: 10px;
     border: 1px;
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
 
 
 }
@@ -259,8 +255,8 @@ padding:15px 40px;
 }
 
 .sponsors div{
-    background: #0A9953;
-    min-height: 200px;
+    /*background: #0A9953;*/
+    /*min-height: 200px;*/
     margin-bottom: 50px;
 }
 
@@ -313,3 +309,18 @@ padding:15px 40px;
 .teams div{
     margin-bottom: 50px;
 }
+
+
+@media  (max-width: 767px) {
+    .row
+{
+
+    padding: 0 10px;
+
+}
+
+.tours div.span3 img{
+    width: 50%;
+
+    }
+ }
