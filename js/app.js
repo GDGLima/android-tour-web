@@ -5,9 +5,6 @@
  * To change this template use File | Settings | File Templates.
  */
     const TOTALCIRCLE=10;
-    //const POSITIONR=900;
-    //const POSITIONL=50;
-   // const POSXCIRCLE=400;
     const POSITIONR=1000;
     const POSITIONL=200;
     const POSXCIRCLE=530;
@@ -37,7 +34,6 @@ $(document).ready(function()
     socialapp.app();
 
     //events
-    //events
     $(window).resize(resize_handler);
     $(window).blur(blur_handler);
     $(window).focus(focus_handler);
@@ -62,9 +58,6 @@ function resize_handler(e)
    var container = $("#canvasapp").parent();
    $("#canvasapp").attr('width',$(container).width());
    socialapp.resize();
-   /*
-    $("#canvasapp").attr('height',$(container).height());
-    console.log("container ",$(container).width());*/
 
 }
 
@@ -73,14 +66,10 @@ function goHome(e)
 {
     $("#pagecontent").fadeOut(1000);
     $("#canvas").fadeIn(1200);
-   // $('#canvas').show();
-    //$('#pagecontent').hide();
 }
 function navigationHandler(e)
 {
     console.log("click ",e,e.target,e.target.id);
-   // $('#canvas').hide();
-   // $('#pagecontent').show();
     var url="#";
     switch(e.target.id)
     {
@@ -133,21 +122,13 @@ function initFooter()
 function changePage()
 {
     console.log("change page ");
-    //$('#canvas').hide();
-    //$('#pagecontent').show();
     $('#pagecontent').load(currentURL);
     $('#pagecontent').hide();
     $("#pagecontent").fadeIn(1500);
-   // content.alpha=0;
-   // TweenLite.to(content,0.8,{alpha:1});
 }
 function hideCanvas()
 {
     $("#canvas").fadeOut(1200,changePage);
-    //$("#pagecontent").fadeOut(500);
-    //changePage(url);
-  //TweenLite.to(canvas,0.8,{css:{autoAlpha:0}});
-  // TweenLite.to(canvas,0.8,{css:{alpha:0},onComplete:changePage,onCompleteParams:[url]})
 }
 
 function reset()

@@ -5,8 +5,6 @@
  * Time: 02:43 PM
  * To change this template use File | Settings | File Templates.
  */
-//const TIMEUPDATETWEET=4000;
- //const POSXCIRCLE=320;
 
 //CANVAS ------------------------------
 var stage;
@@ -27,13 +25,14 @@ var _posXCircle=0;
 var _center=0;
 //-------------------------
 var _stateActive=false;
+var _factor=0.005;
 
 var SocialApp=function()
 {
     this.tweets=tweetData;
     this.init=function()
     {
-        console.log("init");
+        //console.log("init");
         _arrLine=[];
         _posXLEFT=0;//100
         _posXRIGTH=0;//Config.STAGEWIDTH-100-40;
@@ -42,7 +41,7 @@ var SocialApp=function()
     }
     this.showData=function(data)
     {
-        console.log("showdata");
+       // console.log("showdata");
         $(data.results).each(function(i,v)
         {
            var obj=new Object();
@@ -54,13 +53,13 @@ var SocialApp=function()
            tweetData.push(obj);
         });
 
-        console.log("tweet ",tweetData.length);
+       // console.log("tweet ",tweetData.length);
         initTweet();
     }
     //base ------------------------------------------
     this.app=function()
     {
-        console.log("app");
+       // console.log("app");
         JQUERY4U.WIDGETS.TWITTER.init();
         _arrLEFT=[];
         _arrRIGTH=[];
@@ -71,8 +70,6 @@ var SocialApp=function()
 
         drawCircles();
 
-       // createjs.Ticker.addEventListener("tick", stage);
-       // createjs.Ticker.setInterval(30);
         createjs.Ticker.setFPS(40);
         createjs.Ticker.addEventListener("tick", tick);
     }
@@ -96,7 +93,6 @@ var SocialApp=function()
     }
     this.removeLine=function(_obj)
     {
-      // if(stage.chi)
        stage.removeChild(_obj);
     }
 
@@ -140,42 +136,37 @@ var SocialApp=function()
     function drawCircles()
     {
         //draw circle
-      //  circle1=new CircleAndroid("GDGLima","#0FF");
-        circle1=new CircleAndroid("GDGLima","#C5423A",150);
-        circle2=new CircleAndroid("GDGLima","#0A9853",150);//("GDGArequipa","#0FF");
-        circle3=new CircleAndroid("GDGLima","#F8C63F",150);//("AndroidTour","#0FF");
+        circle1=new CircleAndroid(Config.HASHTAG_ATP,"#C5423A",150,"androidtourperu");
+        circle2=new CircleAndroid(Config.HASHTAG_GDGAREQUIPA,"#0A9853",150,"gdgarequipa");//("GDGArequipa","#0FF");
+        circle3=new CircleAndroid(Config.HASHTAG_GDGLIMA,"#F8C63F",150,"gaglima");//("AndroidTour","#0FF");
         stage.addChild(circle1);
         stage.addChild(circle2);
         stage.addChild(circle3);
 
-       // _posXCircle=Config.STAGEWIDTH*0.5-50;
-        _posXCircle=_center*0.5-60;
-
+        _posXCircle=_center*0.5-80;
         circle1.x=_posXCircle;
         circle1.y=140;
-
-        circle2.x=_posXCircle+170;
+        circle2.x=_posXCircle+180;
         circle2.y=120;
-
         circle3.x=_posXCircle+140;
         circle3.y=260;
 
         circle1.scaleX=0;
         circle1.scaleY=0;
-
         circle2.scaleX=0;
         circle2.scaleY=0;
-
         circle3.scaleX=0;
         circle3.scaleY=0;
 
-        circle1.aux=0.7;
-        circle2.aux=0.5;
-        circle3.aux=0.6;
+        circle1.aux=Config.SCALECIRCLEMIN//0.7;
+        circle2.aux=Config.SCALECIRCLEMIN//0.5;
+        circle3.aux=Config.SCALECIRCLEMIN//0.6;
+        var aux=Config.SCALECIRCLEMIN;
 
-        TweenLite.to(circle1, 0.6, {alpha:1,scaleX:0.7,scaleY:0.7,delay:1});
-        TweenLite.to(circle2, 0.6, {alpha:1,scaleX:0.5,scaleY:0.5,delay:1.3});
-        TweenLite.to(circle3, 0.6, {alpha:1,scaleX:0.6,scaleY:0.6,delay:1.6});
+        TweenLite.to(circle1, 0.6, {alpha:1,scaleX:aux,scaleY:aux,delay:1});
+        TweenLite.to(circle2, 0.6, {alpha:1,scaleX:aux,scaleY:aux,delay:1.3});
+        TweenLite.to(circle3, 0.6, {alpha:1,scaleX:aux,scaleY:aux,delay:1.6});
+
         //events
         circle1.addEventListener("mouseover", handleMouseOver);
         circle1.addEventListener("mouseout", handleMouseOut);
@@ -192,21 +183,23 @@ var SocialApp=function()
             _current=0;
             return;
         }
-        console.log(">>>> add Tweet ");
+        //console.log(">>>> add Tweet ");
         var img = new Image();
         img.src = tweetData[_current].url;//"assets/daisy.png";
         img.onload = handleImageLoad;
         img.aux=_current;
+        img.hashtag="gdglima";
     }
     function handleImageLoad(event)
     {
         var indice=event.target.aux;
+        var hashtag=event.target.hashtag;
+
         if(indice>tweetData.length)return;
-        //console.log("pos >>>> ",event.target.aux);
         var posX=0;
         var posY=0;
         var image = event.target;
-        var user=new UserImg(tweetData[indice],image);
+        var user=new UserImg(tweetData[indice],image,hashtag);
         user.regX=30;
         user.regY=30;
         stage.addChild(user);
@@ -222,7 +215,7 @@ var SocialApp=function()
         var pX=0;
         if(rd<2)
         {
-            pX=_posXLEFT+80;
+            pX=_posXLEFT+100;
             user.posX=0;
         }else
         {
@@ -242,16 +235,44 @@ var SocialApp=function()
     function completeUserOrder(_user, _indice)
     {
         //draw Line
-        var line=new JoinLine(this,"#ff",_user.x,_user.y,circle1.x,circle1.y,_user.posX );
+        //console.log("user hashtag ",_user.hashtag, "circle ",circle1.hashtag);
+        var auxCircle=null;
+        var color="#ff";
+ 
+        if(_user.hashtag==circle1.hashtag)
+        {
+            //console.log("hastag  1",_user.hashtag);
+            auxCircle=circle1;
+            color=circle1.color;
+        }else if(_user.hashtag==circle2.hashtag)
+        {
+            //console.log("hastag  2",_user.hashtag);
+            auxCircle=circle2;
+            color=circle2.color;
+        }else
+        {
+            //console.log("hastag  3",_user.hashtag);
+            auxCircle=circle3;
+            color=circle3.color;
+        }
+        //console.log("circle ",auxCircle);
+
+        var line=new JoinLine(this,color,_user.x,_user.y,auxCircle.x,auxCircle.y,_user.posX );
         stage.addChild(line);
         _arrLine.push(line);
         TweenLite.to(line, 0.8, {alpha:0.2,onComplete:completeLine,
-            onCompleteParams:[line,_user]});
+            onCompleteParams:[line,_user,auxCircle]});
     }
-    function completeLine(_line,_user)
+    function completeLine(_line,_user,_auxCircle)
     {
         _line.state=0;
         reorderElement(_user);
+
+        var aux=_auxCircle.aux+_factor;
+        if(aux>Config.SCALECIRCLEMAX)return;
+        _auxCircle.scaleX=aux;
+        _auxCircle.scaleY=aux;
+        _auxCircle.aux=aux;
     }
     /* reordenar elementos */
     function reorderElement(_user)
@@ -259,7 +280,7 @@ var SocialApp=function()
         var aux=0;
         if(_user.posX==0)
         {
-            aux=_posXLEFT+30;
+            aux=_posXLEFT+40;
         }else
         {
             aux=_posXRIGTH-20;
@@ -312,10 +333,6 @@ var SocialApp=function()
     }
     function orderArr(_arr)
     {
-       /* for(var i=_arr.length-1;i>0;i--)
-        {
-            _arr[i].y=50+i*60;
-        }*/
         _arr.forEach(function(el)
         {
             //el.y=50+_arr.indexOf(el)*60;
@@ -331,17 +348,13 @@ var SocialApp=function()
         circle1.y=135+Math.cos(tm*0.002)*2;
         circle1.x=_posXCircle+Math.cos(tm*0.003)*2;
         circle2.y=115+Math.cos(tm*0.003)*2;
-        circle2.x=_posXCircle+150+Math.cos(tm*0.0025)*2;
+        circle2.x=_posXCircle+180+Math.cos(tm*0.0025)*2;
 
         circle3.y=255+Math.cos(tm*0.0025)*2;
-        circle3.x=_posXCircle+120+Math.cos(tm*0.002)*2;
+        circle3.x=_posXCircle+140+Math.cos(tm*0.002)*2;
     }
     function clearLine()
     {
-       /* foreach (el in _arrLine)
-        {
-            stage.removeChild(el);
-        }*/
         _arrLine.forEach(function remove(el)
         {
            if(el.state==0) {stage.removeChild(el)}
@@ -361,8 +374,8 @@ var SocialApp=function()
        _timerTweet=Utils.createTimer(0,updateTweet,2000);// setInterval(updateTweet,TIMEUPDATETWEET);
        //_timerTweet.start();
     }
+    //--------------------------
 
     this.init();
-    //init();
 }
 //--------------------------

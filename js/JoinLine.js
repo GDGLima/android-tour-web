@@ -7,9 +7,9 @@
  */
 (function()
 {
-    var JoinLine=function ( _context,color, p1X,p1Y,p2X,p2Y,_posX)
+    var JoinLine=function ( _context,_color, p1X,p1Y,p2X,p2Y,_posX)
     {
-        this.initialize(_context,color, p1X,p1Y,p2X,p2Y,_posX);
+        this.initialize(_context,_color, p1X,p1Y,p2X,p2Y,_posX);
     }
     var p = JoinLine.prototype = new createjs.Container(); // inherit from Container
     p.color;
@@ -34,15 +34,16 @@
         this.posX = _posX;
         this.context=_context;
         this.state=1;
+        this.color=_color;
 
-        if (!_color) { _color = "#CCC"; }
+        if (!this.color) { this.color = "#CCC"; }
        // var width = text.getMeasuredWidth()+30;
         //var height = text.getMeasuredHeight()+20;
         //circle
         this.background = new createjs.Shape();
 
         this.background.graphics.setStrokeStyle(3);
-        this.background.graphics.beginStroke("#4D8CF6");//4D8CF6
+        this.background.graphics.beginStroke(this.color);//"#4D8CF6");//4D8CF6
         var aX=0;
         var aY=0;
         if(this.posX<=0)

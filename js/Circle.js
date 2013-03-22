@@ -7,7 +7,7 @@
  */
 (function()
 {
-    var Circle=function (label, color)
+    var Circle=function (label, color,_hashtag)
     {
         this.initialize(label,color);
     }
@@ -16,22 +16,20 @@
     p.background;
     p.count = 0;
     p.aux=1;
+    p.hashtag=_hashtag;
 
     p.Container_initialize = p.initialize;
-    p.initialize = function(label,color)
+    p.initialize = function(label,color,_hashtag)
     {
         this.Container_initialize();
         // add custom setup logic here.
 
         this.label = label;
+        this.hashtag=_hashtag;
         if (!color) { color = "#CCC"; }
-
-       // var text = new createjs.Text(label, "20px Arial", "#454545");
         var text = new createjs.Text(label, "15px Arial", "#F3F3F3");
         text.textBaseline = "top";
         text.textAlign = "center";
-      //  text.bold(true);
-       // text.
 
         var width = text.getMeasuredWidth()+30;
         var height = text.getMeasuredHeight()+20;

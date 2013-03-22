@@ -7,31 +7,30 @@
  */
 (function()
 {
-    var UserImg=function (info, image)
+    var UserImg=function (info, image,_hashtag)
     {
-        this.initialize(info,image);
+        this.initialize(info,image,_hashtag);
     }
     var p = UserImg.prototype = new createjs.Container(); // inherit from Container
     p.info;
     p.background;
     p.count = 0;
-    //p.aux=new Object();
     p.image;
     p.posX=0;
+    p.hashtag="";
 
     p.Container_initialize = p.initialize;
-    p.initialize = function(info,image)
+    p.initialize = function(info,image,_hashtag)
     {
         this.Container_initialize();
         // add custom setup logic here.
         this.info = info;
         this.image = image;
-        //console.log("info ",info);
+        this.hashtag=_hashtag;
+
         //bitmap
         var bitmap = new createjs.Bitmap(image);
         bitmap.mouseEnabled=false;
-            //bitmap.regX=30;
-            //bitmap.regY=30;
 
         //background
         this.background = new createjs.Shape();
