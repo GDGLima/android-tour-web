@@ -72,10 +72,10 @@ footer a#network_facebook
 }
 
 
-<!-- /* canvas */ -->
+<!-- /* canvas     border: 1px solid #9C9898; */ -->
 #canvasapp
 {
-    border: 1px solid #9C9898;
+
     margin-left: auto;
     margin-right: auto;
     padding: 10px;

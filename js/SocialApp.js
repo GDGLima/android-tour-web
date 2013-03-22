@@ -25,6 +25,8 @@ var _posXLEFT=0;
 var _posXRIGTH=0;
 var _posXCircle=0;
 var _center=0;
+//-------------------------
+var _stateActive=false;
 
 var SocialApp=function()
 {
@@ -82,10 +84,14 @@ var SocialApp=function()
 
     this.active=function()
     {
-        initTweet();
+        if(_stateActive==false)
+        {
+            initTweet();
+        }
     }
     this.inactive=function()
     {
+        _stateActive=false;
         if(_timerTweet){clearInterval(_timerTweet)};
     }
     this.removeLine=function(_obj)
@@ -350,6 +356,7 @@ var SocialApp=function()
 
     function initTweet()
     {
+        _stateActive=true;
        //_timerTweet=Utils.createTimer(0,updateTweet,Config.TIMEUPDATETWEET);// setInterval(updateTweet,TIMEUPDATETWEET);
        _timerTweet=Utils.createTimer(0,updateTweet,2000);// setInterval(updateTweet,TIMEUPDATETWEET);
        //_timerTweet.start();

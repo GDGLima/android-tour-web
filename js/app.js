@@ -37,10 +37,26 @@ $(document).ready(function()
     socialapp.app();
 
     //events
+    //events
     $(window).resize(resize_handler);
+    $(window).blur(blur_handler);
+    $(window).focus(focus_handler);
+
     resize_handler();
 
 });
+
+function blur_handler(e)
+{
+    socialapp.inactive();
+    console.log("blur");
+}
+function focus_handler(e)
+{
+    socialapp.active();
+    console.log("focus");
+}
+
 function resize_handler(e) 
 {
    var container = $("#canvasapp").parent();
