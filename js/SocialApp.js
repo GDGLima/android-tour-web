@@ -257,15 +257,26 @@ var SocialApp=function()
         }
         //console.log("circle ",auxCircle);
 
+        //text-----------------------------
         var line=new JoinLine(this,color,_user.x,_user.y,auxCircle.x,auxCircle.y,_user.posX );
         stage.addChild(line);
         _arrLine.push(line);
         TweenLite.to(line, 0.8, {alpha:0.2,onComplete:completeLine,
             onCompleteParams:[line,_user,auxCircle]});
+
+
     }
     function completeLine(_line,_user,_auxCircle)
     {
         _line.state=0;
+        //text-----------------------------
+        var txt=createText(_user.info.txt,_user.x,_user.y,_user.posX)
+        stage.addChild(txt);
+        //var auxY=_user.y-200;
+       // console.log("txt ",_user.info.txt);
+        TweenLite.to(txt, 2, {alpha:0.3,onComplete:completeTxt,
+            onCompleteParams:[txt]});
+
         reorderElement(_user);
 
         var aux=_auxCircle.aux+_factor;
@@ -273,6 +284,13 @@ var SocialApp=function()
         _auxCircle.scaleX=aux;
         _auxCircle.scaleY=aux;
         _auxCircle.aux=aux;
+    }
+    function completeTxt(_txt)
+    {
+        if(_txt!=null)
+        {
+            stage.removeChild(_txt);
+        }
     }
     /* reordenar elementos */
     function reorderElement(_user)
@@ -305,11 +323,14 @@ var SocialApp=function()
     }
     function tick()
     {
-        moveCircles();
-        clearLine();
-        validateArrLeft();
-        validateArrRigth();
-        stage.update();
+        if(_stateActive)
+        {
+            moveCircles();
+            clearLine();
+            validateArrLeft();
+            validateArrRigth();
+            stage.update();
+        }
     }
     //reorder user ---------------------------------------
     function validateArrLeft()
@@ -339,6 +360,25 @@ var SocialApp=function()
             var auxY=50+_arr.indexOf(el)*60;
             TweenLite.to(el,0.2,{y:auxY});
         })
+    }
+
+    //create text
+    function createText(_txt,_posX,_posY,_align)
+    {
+        var text = new createjs.Text(_txt, "14px bold Verdana","#000000");
+        text.textBaseline = "top";
+        if(_align==0)
+        {
+            text.textAlign = "left";
+            text.x = _posX +20;
+        }else{
+            text.textAlign = "right";
+            text.x = _posX -30;
+        }
+        //-width*0.5;
+        text.y =_posY-10;// -height*0.5;
+
+        return text;
     }
     //functions common -----------------------------------
     function moveCircles()
