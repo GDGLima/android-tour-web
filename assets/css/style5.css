@@ -7,7 +7,7 @@
 	cursor: default;
 }
 
-.ch-info-wrap, 
+.ch-info-wrap,
 .ch-info{
 	position: absolute;
 	width: 180px;
@@ -19,8 +19,8 @@
 	top: 20px;
 	left: 20px;
 	/*background: #f9f9f9 url(../images/bg.jpg);*/
-	box-shadow: 
-		0 0 0 20px rgba(255,255,255,0.2), 
+	box-shadow:
+		0 0 0 20px rgba(255,255,255,0.2),
 		inset 0 0 3px rgba(115,114, 23, 0.8);
 
 }
@@ -32,7 +32,7 @@
 	height: 100%;
 	border-radius: 50%;
 	background-position: center center;
-	
+
 	-webkit-backface-visibility: hidden; /*Just for webkit to have a smooth font*/
 }
 
@@ -50,13 +50,13 @@
 	/*background: #223e87;*/
 	background: #099953;
 	pointer-events: none;
-	
+
 	-webkit-transform: scale(1.5);
 	-moz-transform: scale(1.5);
 	-o-transform: scale(1.5);
 	-ms-transform: scale(1.5);
 	transform: scale(1.5);
-	
+
 	-webkit-transition: all 0.4s ease-in-out 0.2s;
 	-moz-transition: all 0.4s ease-in-out 0.2s;
 	-o-transition: all 0.4s ease-in-out 0.2s;
@@ -64,9 +64,21 @@
 	transition: all 0.4s ease-in-out 0.2s;
 }
 
-.ch-img-20 { 
+.ch-img-20 {
 	background-image: url(../images/davidc220.jpg);
 }
+
+/*Experts*/
+
+.ch-img-23 {
+	background-image: url(../images/adrian220.png);
+}
+
+
+.ch-img-24 {
+	background-image: url(../images/federico220.jpg);
+}
+
 
 
 .ch-info h3 {
@@ -78,8 +90,8 @@
 	padding: 40px 0 0 0;
 	height: 80px;
 	font-family: 'Open Sans', Arial, sans-serif;
-	text-shadow: 
-		0 0 1px #fff, 
+	text-shadow:
+		0 0 1px #fff,
 		0 1px 2px rgba(0,0,0,0.3);
 }
 
@@ -116,9 +128,9 @@
 	-o-transform: scale(0);
 	-ms-transform: scale(0);
 	transform: scale(0);
-	
+
 	opacity: 0;
-} 
+}
 
 .ch-item:hover .ch-info-back {
 	-webkit-transform: scale(1);
@@ -126,7 +138,7 @@
 	-o-transform: scale(1);
 	-ms-transform: scale(1);
 	transform: scale(1);
-	
+
 	opacity: 1;
 	pointer-events: auto;
 }
