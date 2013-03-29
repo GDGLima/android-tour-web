@@ -32,7 +32,7 @@
         if (!this.color) { this.color = "#CCC"; }
         this.radio=radio;
 
-        var text = new createjs.Text(label, "15px Arial", "#F3F3F3");
+        var text = new createjs.Text(label, Config.FONT, "#F3F3F3");//15px Arial
         text.textBaseline = "top";
         text.textAlign = "center";
 

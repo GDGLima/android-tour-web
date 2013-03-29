@@ -365,7 +365,7 @@ var SocialApp=function()
     //create text
     function createText(_txt,_posX,_posY,_align)
     {
-        var text = new createjs.Text(_txt, "14px bold Verdana","#000000");
+        var text = new createjs.Text(_txt , Config.FONTMIN ,"#000000");// "14px bold Verdana"
         text.textBaseline = "top";
         if(_align==0)
         {

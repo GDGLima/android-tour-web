@@ -23,4 +23,7 @@ Config.HASHTAG_GDGLIMA= "GDGLima";
 Config.SCALECIRCLEMAX=1.2;
 Config.SCALECIRCLEMIN=0.5;
 
+Config.FONT="14px sans-serif";//// font:50px Arial, sans-serif;";
+Config.FONTMIN="12px sans-serif";//// font:50px Arial, sans-serif;";
+
 
