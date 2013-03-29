@@ -23,7 +23,7 @@
 $(document).ready(function()
 {
     // console.log("NO SEAN SAPOS" , "HOLA PIÑAN");
-    console.log("ready ...",window.innerWidth);
+    console.log("---------------------- VERSION 2.0 ---------------");
     $('#pagecontent').hide();
     canvas=document.getElementById("canvasapp");
     content=document.getElementById("pagecontent");
