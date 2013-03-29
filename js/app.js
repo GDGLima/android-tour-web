@@ -45,12 +45,12 @@ $(document).ready(function()
 function blur_handler(e)
 {
     socialapp.inactive();
-    console.log("blur");
+    //console.log("blur");
 }
 function focus_handler(e)
 {
     socialapp.active();
-    console.log("focus");
+    //console.log("focus");
 }
 
 function resize_handler(e) 
@@ -69,28 +69,28 @@ function goHome(e)
 }
 function navigationHandler(e)
 {
-    console.log("click ",e,e.target,e.target.id);
+    //console.log("click ",e,e.target,e.target.id);
     var url="#";
     switch(e.target.id)
     {
         case 'btnHome':
-                console.log("click Home");
+                //console.log("click Home");
                 url="assets/template/androidtour.html";
             break;
         case 'btnProgram':
-                console.log("click Program");
+                //console.log("click Program");
             url="assets/template/program.html";
             break;
         case 'btnSpeaker':
-                console.log("click Speaker");
+                //console.log("click Speaker");
             url="assets/template/speaker.html";
             break;
         case 'btnSponsor':
-                console.log("click Sponsor");
+                //console.log("click Sponsor");
             url="assets/template/sponsor.html";
             break;
         case 'btnTeam':
-                console.log("click Team");
+                //console.log("click Team");
             url="assets/template/team.html";
             break;
     }
