@@ -1996,9 +1996,11 @@ legend + .control-group {
 
 table {
   max-width: 100%;
-  background-color: transparent;
+  /*background-color: transparent;*/
   border-collapse: collapse;
   border-spacing: 0;
+  background-color: #f2f2f2;
+ 
 }
 
 .table {
@@ -2008,11 +2010,17 @@ table {
 
 .table th,
 .table td {
-  padding: 8px;
+ /* padding: 8px;
   line-height: 20px;
   text-align: left;
   vertical-align: top;
   border-top: 1px solid #dddddd;
+  */
+  border: 3px solid #FFFFFF;
+text-align: center;
+padding: 15px;
+color: #000000;
+font-size: 11pt;
 }
 
 .table th {
